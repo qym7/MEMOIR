@@ -1,0 +1,21 @@
+alg_name: "MEMOIR"
+model_name: "EleutherAI/gpt-j-6b"
+
+device: 0       
+
+edit_lr: 1.0  
+n_iter: 70
+objective_optimization: 'only_label'
+inner_params:
+- transformer.h[21].mlp.fc_out.weight
+
+model_parallel: False
+use_chat_template: False
+
+top_k: 4096
+irr_threshold: 0.46
+prompt_feature_agg: mean_decentered
+dir_background_features: "./background_features/gpt_j_background_features.pt"
+
+RUN_SAVE_BACKGROUND_FEATURES: False
+dir_to_save_background_features: "./background_features/gpt_j_background_features_new.pt"
