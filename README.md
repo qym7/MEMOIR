@@ -103,10 +103,10 @@ python examples/run_wise_editing.py \
 If you find this work useful, please cite:
 
 ```bibtex
-@article{wang2025memoir,
+@inproceedings{wang2025memoir,
   title={MEMOIR: Lifelong Model Editing with Minimal Overwrite and Informed Retention for LLMs},
   author={Wang, Ke and Qin, Yiming and Dimitriadis, Nikolaos and Favero, Alessandro and Frossard, Pascal},
-  journal={arXiv preprint arXiv:2506.07899},
+  booktitle={Conference on Neural Information Processing Systems (NeurIPS)},
   year={2025}
 }
 
